@@ -56,7 +56,7 @@ function video(q){
           var channel = rss.items[0].snippet.channelTitle;
           document.getElementById('desc').innerHTML = channel;
           var fbButton = document.getElementById('fb-share-button');
-          var url = "https://ytqck.github.io/watch.html?"+videoId;
+          var url = "https://mnrlive.github.io/watch.html?"+videoId;
           document.getElementById('linkShare').innerHTML = url;
           url += '&quote='+titleY;
           fbButton.addEventListener('click', function() {
