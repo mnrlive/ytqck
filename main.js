@@ -1,6 +1,6 @@
 var z = window.location.href;
 var y = z.substring(35, z.length);
-document.getElementById('YTPlayer').innerHTML = ('<iframe id="ytplayer" type="text/html" width="560" height="315" src="https://www.youtube.com/embed/'+y+'?autoplay=1&color=white&showinfo=0&rel=0" allowfullscreen frameborder="0"></iframe>');
+document.getElementById('YTPlayer').innerHTML = ('<iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/'+y+'?autoplay=1&color=white&showinfo=0&rel=0" allowfullscreen frameborder="0"></iframe>');
 details(y);
 stats(y);
 function details(videoId){
@@ -18,7 +18,7 @@ function details(videoId){
           var channel = rss.items[0].snippet.channelTitle;
           document.getElementById('desc').innerHTML = channel;
           var fbButton = document.getElementById('fb-share-button');
-          var url = "https://ytqck.github.io/watch.html?"+videoId+'&quote='+titleY;
+          var url = "https://mnrlive.github.io/ytqck/watch.html?"+videoId+'&quote='+titleY;
 
           fbButton.addEventListener('click', function() {
               window.open('https://www.facebook.com/sharer/sharer.php?u=' + url,
